@@ -37,11 +37,12 @@ Having used an installer for the respective version of VS, we crawl its director
 Having used an installer for the Windows version of a MinGW release, we crawl its directory structure to discover and process all `*.A` and `*.O`, sort them by bitness, and merge the code found into a single file.
 
 
-| Name      | Date       | Version                    | MCRIT | SMDA |
-|-----------|------------|----------------------|-------|------|
-| MinGW r8  | 2013-06-01 | trunk_r5876 gcc4.8.1   | [x86](data/MinGW/x86/mcrit/mingw-w64-gcc-4.8.1-stable-r8_x86.mcrit) / [x64](data/MinGW/x64/mcrit/mingw-w64-gcc-4.8.1-stable-r8_x64.mcrit)     | [x86](data/MinGW/x86/smda/mingw-w64-gcc-4.8.1-stable-r8_x86.7z) / [x64](data/MinGW/x64/smda/mingw-w64-gcc-4.8.1-stable-r8_x64.7z)     |
-| MinGW r11 | 2014-05-22 | v3.1.0 gcc4.8.3 binutils2.24 | [x86](data/MinGW/x86/mcrit/mingw-w64-gcc-4.8.3-stable-r11_x86.mcrit) / [x64](data/MinGW/x64/mcrit/mingw-w64-gcc-4.8.3-stable-r11_x64.mcrit)     | [x86](data/MinGW/x86/smda/mingw-w64-gcc-4.8.3-stable-r11_x86.7z) / [x64](data/MinGW/x64/smda/mingw-w64-gcc-4.8.3-stable-r11_x64.7z)     |
-| MinGW r32 | 2020-04-30 | v7.0.0 gcc9.3 binutils2.34 | [x64](data/MinGW/x64/mcrit/mingw7.0.0_gcc9.3_binutils2.34_r32_x64.mcrit)      | [x64](data/MinGW/x64/smda/mingw7.0.0_gcc9.3_binutils2.34_r32_x64.7z)     |
+| Name      | Date       | Version                           | MCRIT | SMDA |
+|-----------|------------|-----------------------------------|-------|------|
+| MinGW r8  | 2013-06-01 | trunk_r5876 gcc4.8.1              | [x86](data/MinGW/x86/mcrit/mingw-w64-gcc-4.8.1-stable-r8_x86.mcrit) / [x64](data/MinGW/x64/mcrit/mingw-w64-gcc-4.8.1-stable-r8_x64.mcrit)     | [x86](data/MinGW/x86/smda/mingw-w64-gcc-4.8.1-stable-r8_x86.7z) / [x64](data/MinGW/x64/smda/mingw-w64-gcc-4.8.1-stable-r8_x64.7z)     |
+| MinGW r11 | 2014-05-22 | v3.1.0      gcc4.8.3 binutils2.24 | [x86](data/MinGW/x86/mcrit/mingw-w64-gcc-4.8.3-stable-r11_x86.mcrit) / [x64](data/MinGW/x64/mcrit/mingw-w64-gcc-4.8.3-stable-r11_x64.mcrit)     | [x86](data/MinGW/x86/smda/mingw-w64-gcc-4.8.3-stable-r11_x86.7z) / [x64](data/MinGW/x64/smda/mingw-w64-gcc-4.8.3-stable-r11_x64.7z)     |
+| MinGW r27 | 2017-08-16 | v5.0.2      gcc7.2   binutils2.29 | [x64](data/MinGW/x64/mcrit/mingw-w64-gcc-7.2-stable-r27_x64.mcrit)      | [x64](data/MinGW/x64/smda/mingw-w64-gcc-7.2-stable-r27_x64.7z)     |
+| MinGW r32 | 2020-04-30 | v7.0.0      gcc9.3   binutils2.34 | [x64](data/MinGW/x64/mcrit/mingw-w64-gcc-9.3-stable-r32_x64.mcrit)      | [x64](data/MinGW/x64/smda/mingw7.0.0_gcc9.3_binutils2.34_r32_x64.7z)     |
 
 
 ## Libraries
@@ -51,20 +52,22 @@ In some cases, we also processed code found "as-is".
 
 ### aPLib
 
-| Name      | Date       | Version                    | MCRIT | SMDA |
-|-----------|------------|----------------------|-------|------|
-| aPLib  | 1998-05-03 | 0.12b   | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.12b_coff_aplib.lib.7z)   |
-| aPLib  | 1998-09-23 | 0.17b   | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.17b_coff_aplib.lib.7z)   |
-| aPLib  | 1998-10-03 | 0.18b   | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.18b_coff_aplib.lib.7z)   |
-| aPLib  | 1998-11-05 | 0.19b   | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.19b_coff_aplib.lib.7z)   |
-| aPLib  | 1999-01-14 | 0.20b   | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.20b_coff_aplib.lib.7z)   |
-| aPLib  | 1999-05-26 | 0.22    | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.22_coff_aplib.lib.7z)    |
-| aPLib  | 2001-01-24 | 0.26    | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.26_coff_aplib.lib.7z)    |
-| aPLib  | 2002-04-18 | 0.36    | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.36_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-0.36_elf_aplib.a.7z)   |
-| aPLib  | 2004-10-16 | 0.42    | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.42_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-0.42_elf_aplib.a.7z)   |
-| aPLib  | 2005-10-08 | 0.43    | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.43_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-0.43_elf_aplib.a.7z)   |
-| aPLib  | 2008-06-22 | 0.44    | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.44_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-0.44_elf_aplib.a.7z)   |
-| aPLib  | 2009-07-29 | 1.01    | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-1.01_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-1.01_elf_aplib.a.7z) / [x64 PE](data/aPLib/x64/aPLib-1.01_coff64_aplib.lib.7z) / [x64 ELF](data/aPLib/x64/aPLib-1.01_elf64_aplib.a.7z)  |
-| aPLib  | 2014-01-20 | 1.1.1   | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-1.1.1_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-1.1.1_elf_aplib.a.7z) / [x64 PE](data/aPLib/x64/aPLib-1.1.1_coff64_aplib.lib.7z) / [x64 ELF](data/aPLib/x64/aPLib-1.1.1_elf64_aplib.a.7z)  |
-| aPLib  | 2014-07-20 | 1.10    | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-1.10_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-1.10_elf_aplib.a.7z) / [x64 PE](data/aPLib/x64/aPLib-1.10_coff64_aplib.lib.7z) / [x64 ELF](data/aPLib/x64/aPLib-1.10_elf64_aplib.a.7z)  |
-| aPLib  | 2014-07-20 | 1.11    | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-1.11_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-1.11_elf_aplib.a.7z) / [x64 PE](data/aPLib/x64/aPLib-1.11_coff64_aplib.lib.7z) / [x64 ELF](data/aPLib/x64/aPLib-1.11_elf64_aplib.a.7z)  |
+aPLib is a popular compression library implementing LZ.  
+Dates are estimates based on file timestamps found in distributed files.
+
+| Name   | Date       | Version | Compiler       | MCRIT         | SMDA |
+|--------|------------|---------|----------------|---------------|------|
+| aPLib  | 1998-05-03 | 0.12b   | as distributed | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.12b_coff_aplib.lib.7z)   |
+| aPLib  | 1998-09-23 | 0.17b   | as distributed | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.17b_coff_aplib.lib.7z)   |
+| aPLib  | 1998-10-03 | 0.18b   | as distributed | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.18b_coff_aplib.lib.7z)   |
+| aPLib  | 1998-11-05 | 0.19b   | as distributed | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.19b_coff_aplib.lib.7z)   |
+| aPLib  | 1999-01-14 | 0.20b   | as distributed | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.20b_coff_aplib.lib.7z)   |
+| aPLib  | 1999-05-26 | 0.22    | as distributed | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.22_coff_aplib.lib.7z)    |
+| aPLib  | 2001-01-24 | 0.26    | as distributed | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.26_coff_aplib.lib.7z)    |
+| aPLib  | 2002-04-18 | 0.36    | as distributed | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.36_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-0.36_elf_aplib.a.7z)   |
+| aPLib  | 2004-10-16 | 0.42    | as distributed | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.42_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-0.42_elf_aplib.a.7z)   |
+| aPLib  | 2005-10-08 | 0.43    | as distributed | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.43_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-0.43_elf_aplib.a.7z)   |
+| aPLib  | 2008-06-22 | 0.44    | as distributed | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-0.44_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-0.44_elf_aplib.a.7z)   |
+| aPLib  | 2009-07-29 | 1.01    | as distributed | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-1.01_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-1.01_elf_aplib.a.7z) / [x64 PE](data/aPLib/x64/aPLib-1.01_coff64_aplib.lib.7z) / [x64 ELF](data/aPLib/x64/aPLib-1.01_elf64_aplib.a.7z)  |
+| aPLib  | 2014-01-20 | 1.10    | as distributed | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-1.10_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-1.10_elf_aplib.a.7z) / [x64 PE](data/aPLib/x64/aPLib-1.10_coff64_aplib.lib.7z) / [x64 ELF](data/aPLib/x64/aPLib-1.10_elf64_aplib.a.7z)  |
+| aPLib  | 2014-07-21 | 1.11    | as distributed | [x86 PE]()    | [x86 PE](data/aPLib/x86/aPLib-1.11_coff_aplib.lib.7z) / [x86 ELF](data/aPLib/x86/aPLib-1.11_elf_aplib.a.7z) / [x64 PE](data/aPLib/x64/aPLib-1.11_coff64_aplib.lib.7z) / [x64 ELF](data/aPLib/x64/aPLib-1.11_elf64_aplib.a.7z)  |
