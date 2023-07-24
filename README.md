@@ -27,8 +27,8 @@ Having used an installer for the respective version of VS, we crawl its director
 
 | Name            | Version | MCRIT                                        | SMDA                                     |
 |-----------------|---------|----------------------------------------------|------------------------------------------|
-| VS 2005 Express | 50727   | [x86](data/MSVC/x86/2005_Express.mcrit)      | [x86](data/MSVC/x86/2005_Express.7z)     |
-| VS 2010 Express | 30319   | [x86](data/MSVC/x86/2010_Express.mcrit)      | [x86](data/MSVC/x86/2010_Express.7z)     |
+| VS 2005 Express | 50727   | [x86](data/MSVC/x86/mcrit/2005_Express.mcrit)      | [x86](data/MSVC/x86/smda/2005_Express.7z)     |
+| VS 2010 Express | 30319   | [x86](data/MSVC/x86/mcrit/2010_Express.mcrit)      | [x86](data/MSVC/x86/smda/2010_Express.7z)     |
 
 
 
