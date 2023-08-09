@@ -27,11 +27,11 @@ Having used an installer for the respective version of VS, we crawl its director
 
 | Name            | Version | MCRIT                                        | SMDA                                     |
 |-----------------|---------|----------------------------------------------|------------------------------------------|
-| VS 6    Express | 8168    | [x86](data/MSVC/x86/mcrit/MSVC6_Express.mcrit)      | [x86](data/MSVC/x86/smda/MSVC6_Express.7z)     |
-| VS 2003 Express | 3077    | [x86](data/MSVC/x86/mcrit/2003_Express.mcrit)      | [x86](data/MSVC/x86/smda/2003_Express.7z)     |
-| VS 2005 Express | 50727   | [x86](data/MSVC/x86/mcrit/2005_Express.mcrit)      | [x86](data/MSVC/x86/smda/2005_Express.7z)     |
-| VS 2010 Express | 30319   | [x86](data/MSVC/x86/mcrit/2010_Express.mcrit)      | [x86](data/MSVC/x86/smda/2010_Express.7z)     |
-
+| VS 6    Express | 8168    | [x86](data/MSVC/x86/mcrit/VC6_Express_x86.mcrit)      | [x86](data/MSVC/x86/smda/VC6_Express_x86.7z)     |
+| VS 2003 Express | 3077    | [x86](data/MSVC/x86/mcrit/2003_Express_x86.mcrit)      | [x86](data/MSVC/x86/smda/2003_Express_x86.7z)     |
+| VS 2005 Express | 50727   | [x86](data/MSVC/x86/mcrit/2005_Express_x86.mcrit)      | [x86](data/MSVC/x86/smda/2005_Express_x86.7z)     |
+| VS 2010 Express | 30319   | [x86](data/MSVC/x86/mcrit/2010_Express_x86.mcrit)      | [x86](data/MSVC/x86/smda/2010_Express_x86.7z)     |
+| VS 2013 Express | -----   | [x86](data/MSVC/x86/mcrit/2013_Express_x86.mcrit)      | [x86](data/MSVC/x86/smda/2013_Express_x86.7z)     |
 
 
 
