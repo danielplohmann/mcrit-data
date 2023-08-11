@@ -78,7 +78,7 @@ Dates are estimates based on file timestamps found in distributed files.
 
 zlib is a popular compression library implementing the Deflate algorithm.  
 Dates taken from Changelog file / release notes.  
-Source data taken from the [Shiftmedia project](https://github.com/ShiftMediaProject/zlib).
+Source lib files taken from the [Shiftmedia project](https://github.com/ShiftMediaProject/zlib).
 
 
 | Name     | Date       | Version | Compiler       | MCRIT                                                                                                                                                 | SMDA                                                                                                                                            |
