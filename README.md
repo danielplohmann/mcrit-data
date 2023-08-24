@@ -90,6 +90,8 @@ Thanks to [Nim-IDA-FLIRT-Generator](https://github.com/Cisco-Talos/Nim-IDA-FLIRT
 
 | Name            | Version | MCRIT                                        | SMDA                                     |
 |-----------------|---------|----------------------------------------------|------------------------------------------|
+| Nim  | 1.2.10    | [x86](data/nim/x86/mcrit/nim-1.2.10_x86.mcrit) / [x64](data/nim/x64/mcrit/nim-1.2.10_x64.mcrit)     | [x86](data/nim/x86/smda/nim-1.2.10_x86.7z) / [x64](data/nim/x64/smda/nim-1.2.10_x64.7z)    |
+| Nim  | 1.4.8    | [x86](data/nim/x86/mcrit/nim-1.4.8_x86_incomplete.mcrit) / [x64](data/nim/x64/mcrit/nim-1.4.8_x64_incomplete.mcrit)     | [x86](data/nim/x86/smda/nim-1.4.8_x86_incomplete.7z) / [x64](data/nim/x64/smda/nim-1.4.8_x64_incomplete.7z)    |
 | Nim  | 1.6.14    | [x86](data/nim/x86/mcrit/nim-1.6.14_x86.mcrit) / [x64](data/nim/x64/mcrit/nim-1.6.14_x64.mcrit)     | [x86](data/nim/x86/smda/nim-1.6.14_x86.7z) / [x64](data/nim/x64/smda/nim-1.6.14_x64.7z)    |
 
 
