@@ -16,12 +16,50 @@ This repository is intended to grow over time, as we find time to process more o
 
 If you feel that something especially relevant is missing, please open an issue and/or provide input data and we will see what we can do.
 
+Compilers
+* [Golang](#gloang)
+* [Microsoft Visual Studio](#msvc)
+* [MinGW](#mingw)
+* [Nim](#nim)
+* [Rust](#rust)
+
+Libraries
+* [aPLib](#aplibrust)
+* [libzlib](#libzlib)
+
 ## Compilers
 
 Reference code extracted from all files containing precompiled code found in installations for various compiler toolchains.
 
 
-### Microsoft Visual Studio
+### Golang<a id='golang'></a>
+
+Many thanks to Daniel Enders for creating these reference binaries during his Master thesis in 2022!  
+The source file used to compile these included as many Golang standard library files as possible to create coverage for common functions.  
+When using these with MCRIT, you probably want to have as few as possible / the most fitting version only as you may otherwise run into performance issues. We noticed that the similarity in Golang library functions can lead to huge candidate clusters for which all functions will have to be matched.
+
+
+| Name      | Date       | Version                           | MCRIT | SMDA |
+|-----------|------------|-----------------------------------|-------|------|
+| Golang   | 2014-05-05 | 1.2.2  | [x86](data/Golang/x86/smda/golang_1.2.2_x86.7z) / x64                                           | [x86](data/Golang/x86/mcrit/golang_1.2.2_x86.mcrit) / x64                                               |
+| Golang   | 2014-06-18 | 1.3    | [x86](data/Golang/x86/smda/golang_1.3_x86.7z) / [x64](data/Golang/x64/smda/golang_1.3_x86.7z)   | [x86](data/Golang/x86/mcrit/golang_1.3_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.3_x64.mcrit)   |
+| Golang   | 2014-12-10 | 1.4    | [x86](data/Golang/x86/smda/golang_1.4_x86.7z) / [x64](data/Golang/x64/smda/golang_1.4_x86.7z)   | [x86](data/Golang/x86/mcrit/golang_1.4_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.4_x64.mcrit)   |
+| Golang   | 2015-08-19 | 1.5    | [x86](data/Golang/x86/smda/golang_1.5_x86.7z) / [x64](data/Golang/x64/smda/golang_1.5_x86.7z)   | [x86](data/Golang/x86/mcrit/golang_1.5_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.5_x64.mcrit)   |
+| Golang   | 2016-02-17 | 1.6    | [x86](data/Golang/x86/smda/golang_1.6_x86.7z) / [x64](data/Golang/x64/smda/golang_1.6_x86.7z)   | [x86](data/Golang/x86/mcrit/golang_1.6_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.6_x64.mcrit)   |
+| Golang   | 2016-08-15 | 1.7    | [x86](data/Golang/x86/smda/golang_1.7_x86.7z) / [x64](data/Golang/x64/smda/golang_1.7_x86.7z)   | [x86](data/Golang/x86/mcrit/golang_1.7_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.7_x64.mcrit)   |
+| Golang   | 2017-02-16 | 1.8    | [x86](data/Golang/x86/smda/golang_1.8_x86.7z) / [x64](data/Golang/x64/smda/golang_1.8_x86.7z)   | [x86](data/Golang/x86/mcrit/golang_1.8_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.8_x64.mcrit)   |
+| Golang   | 2017-08-24 | 1.9    | [x86](data/Golang/x86/smda/golang_1.9_x86.7z) / [x64](data/Golang/x64/smda/golang_1.9_x86.7z)   | [x86](data/Golang/x86/mcrit/golang_1.9_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.9_x64.mcrit)   |
+| Golang   | 2018-02-16 | 1.10   | [x86](data/Golang/x86/smda/golang_1.10_x86.7z) / [x64](data/Golang/x64/smda/golang_1.10_x86.7z) | [x86](data/Golang/x86/mcrit/golang_1.10_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.10_x64.mcrit) |
+| Golang   | 2018-08-24 | 1.11   | [x86](data/Golang/x86/smda/golang_1.11_x86.7z) / [x64](data/Golang/x64/smda/golang_1.11_x86.7z) | [x86](data/Golang/x86/mcrit/golang_1.11_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.11_x64.mcrit) |
+| Golang   | 2019-02-25 | 1.12   | [x86](data/Golang/x86/smda/golang_1.12_x86.7z) / [x64](data/Golang/x64/smda/golang_1.12_x86.7z) | [x86](data/Golang/x86/mcrit/golang_1.12_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.12_x64.mcrit) |
+| Golang   | 2019-09-03 | 1.13   | [x86](data/Golang/x86/smda/golang_1.13_x86.7z) / [x64](data/Golang/x64/smda/golang_1.13_x86.7z) | [x86](data/Golang/x86/mcrit/golang_1.13_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.13_x64.mcrit) |
+| Golang   | 2020-02-25 | 1.14   | [x86](data/Golang/x86/smda/golang_1.14_x86.7z) / [x64](data/Golang/x64/smda/golang_1.14_x86.7z) | [x86](data/Golang/x86/mcrit/golang_1.14_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.14_x64.mcrit) |
+| Golang   | 2020-08-11 | 1.15   | [x86](data/Golang/x86/smda/golang_1.15_x86.7z) / [x64](data/Golang/x64/smda/golang_1.15_x86.7z) | [x86](data/Golang/x86/mcrit/golang_1.15_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.15_x64.mcrit) |
+| Golang   | 2021-02-16 | 1.16   | [x86](data/Golang/x86/smda/golang_1.16_x86.7z) / [x64](data/Golang/x64/smda/golang_1.16_x86.7z) | [x86](data/Golang/x86/mcrit/golang_1.16_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.16_x64.mcrit) |
+| Golang   | 2021-08-16 | 1.17   | [x86](data/Golang/x86/smda/golang_1.17_x86.7z) / [x64](data/Golang/x64/smda/golang_1.17_x86.7z) | [x86](data/Golang/x86/mcrit/golang_1.17_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.17_x64.mcrit) |
+| Golang   | 2022-03-15 | 1.18   | [x86](data/Golang/x86/smda/golang_1.18_x86.7z) / [x64](data/Golang/x64/smda/golang_1.18_x86.7z) | [x86](data/Golang/x86/mcrit/golang_1.18_x86.mcrit) / [x64](data/Golang/x86/mcrit/golang_1.18_x64.mcrit) |
+
+### Microsoft Visual Studio<a id='msvc'></a>
 
 Having used an installer for the respective version of VS, we crawl its directory structure to discover and process all `*.LIB` and `*.OBJ`, sort them by bitness, and merge the code found into a single file.
 
@@ -37,7 +75,7 @@ Having used an installer for the respective version of VS, we crawl its director
 
 
 
-### MinGW
+### MinGW<a id='mingw'></a>
 
 Having used an installer for the Windows version of a MinGW release, we crawl its directory structure to discover and process all `*.A` and `*.O`, sort them by bitness, and merge the code found into a single file.
 
@@ -84,7 +122,8 @@ Having used an installer for the Windows version of a MinGW release, we crawl it
 | MinGW r38  | 2022-08-23 | v10.0.0     gcc12.2  binutils2.39 | [x86](data/MinGW/x86/smda/mingw-w64-gcc-12.2-stable-r38_x86.7z) / [x64](data/MinGW/x64/smda/mingw-w64-gcc-12.2-stable-r38_x64.7z) | [x86](data/MinGW/x86/mcrit/mingw-w64-gcc-12.2-stable-r38_x86.mcrit) / [x64](data/MinGW/x64/mcrit/mingw-w64-gcc-12.2-stable-r38_x64.mcrit) |
 
 
-### Nim
+
+### Nim<a id='nim'></a>
 
 Thanks to [Nim-IDA-FLIRT-Generator](https://github.com/Cisco-Talos/Nim-IDA-FLIRT-Generator) by @hunterbr72, we were able to produce object files for Nim, which we could then turn into MCRIT symbols.
 
@@ -93,6 +132,14 @@ Thanks to [Nim-IDA-FLIRT-Generator](https://github.com/Cisco-Talos/Nim-IDA-FLIRT
 | Nim  | 1.2.10    | [x86](data/nim/x86/mcrit/nim-1.2.10_x86.mcrit) / [x64](data/nim/x64/mcrit/nim-1.2.10_x64.mcrit)     | [x86](data/nim/x86/smda/nim-1.2.10_x86.7z) / [x64](data/nim/x64/smda/nim-1.2.10_x64.7z)    |
 | Nim  | 1.4.8    | [x86](data/nim/x86/mcrit/nim-1.4.8_x86_incomplete.mcrit) / [x64](data/nim/x64/mcrit/nim-1.4.8_x64_incomplete.mcrit)     | [x86](data/nim/x86/smda/nim-1.4.8_x86_incomplete.7z) / [x64](data/nim/x64/smda/nim-1.4.8_x64_incomplete.7z)    |
 | Nim  | 1.6.14    | [x86](data/nim/x86/mcrit/nim-1.6.14_x86.mcrit) / [x64](data/nim/x64/mcrit/nim-1.6.14_x64.mcrit)     | [x86](data/nim/x86/smda/nim-1.6.14_x86.7z) / [x64](data/nim/x64/smda/nim-1.6.14_x64.7z)    |
+
+### Rust<a id='rust'></a>
+
+Ben Herzog wrote a great [reverser's guide to Rust](https://research.checkpoint.com/2023/rust-binary-analysis-feature-by-feature/) and provided some [example binaries](https://github.com/BenH11235/rust-re-tour/tree/main) with full symbols (PDB) and covering different standard library functions.  
+
+| Name      | Date       | Version                           | MCRIT | SMDA |
+|-----------|------------|-----------------------------------|-------|------|
+| Rust RE-Tour | 2023-06-01 | Rosetta  | x86 / [x64](data/Rust/x64/smda/rust_re_tour_rosetta.7z)                                           |x86 / [x64](data/Rust/x64/mcrit/rust_re_tour_rosetta.mcrit)                                               |
 
 
 
