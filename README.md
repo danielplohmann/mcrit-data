@@ -1,6 +1,6 @@
 # MCRIT Reference Data
 
-This repository contains a collection of reference data that can be used with MCRIT.  
+This repository contains a collection of reference data that can be used with the MinHash-based Code Relationship & Investigation Toolkit (MCRIT).  
 The scope is to cover popular, typically statically linked code that is commonly encountered during binary / malware analysis.
 This includes both artefacts introduced by compilers themselves as well as (precompiled) third party libraries that provide access to common algorithms and data structures.
 
