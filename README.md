@@ -74,7 +74,7 @@ Thanks to Check Point Research for processing VS 2015 and 2017.
 | VS 2012 Express | -----   | [x86](data/MSVC/x86/mcrit/2012_Express_x86.mcrit) / [x64](data/MSVC/x64/mcrit/2012_Express_x64.mcrit)     | [x86](data/MSVC/x86/smda/2012_Express_x86.7z) / [x64](data/MSVC/x64/mcrit/2012_Express_x64.mcrit)    |
 | VS 2013 Express | -----   | [x86](data/MSVC/x86/mcrit/2013_Express_x86.mcrit) / [x64](data/MSVC/x64/mcrit/2013_Express_x64.mcrit)     | [x86](data/MSVC/x86/smda/2013_Express_x86.7z) / [x64](data/MSVC/x64/mcrit/2013_Express_x64.mcrit)    |
 | VS 2015 Pro     | -----   | [x86](data/MSVC/x86/mcrit/2015_Pro_x86.mcrit) / [x64](data/MSVC/x64/mcrit/2015_Pro_x64.mcrit)     | [x86](data/MSVC/x86/smda/2015_Pro_x86.7z) / [x64](data/MSVC/x64/mcrit/2015_Pro_x64.mcrit)    |
-| VS 2017 Pro     | -----   | [x86](data/MSVC/x86/mcrit/2017_Pro_x86.mcrit) [x86-MFC](data/MSVC/x86/mcrit/2017_Pro_mfc_x86.mcrit) / [x64](data/MSVC/x64/mcrit/2017_Pro_x64.mcrit) [x64-mfc](data/MSVC/x64/mcrit/2017_Pro_mfc_x64.mcrit)    | [x86](data/MSVC/x86/smda/2017_Pro_x86.7z) [x86-mfc](data/MSVC/x86/smda/2017_Pro_mfc_x86.7z) / [x64](data/MSVC/x64/mcrit/2017_Pro_x64.mcrit) [x64-mfc](data/MSVC/x64/mcrit/2017_Pro_mfc_x64.mcrit)   |
+| VS 2017 Pro     | -----   | [x86](data/MSVC/x86/mcrit/2017_Pro_x86.mcrit) / [x86-MFC](data/MSVC/x86/mcrit/2017_Pro_mfc_x86.mcrit) / [x64](data/MSVC/x64/mcrit/2017_Pro_x64.mcrit) / [x64-MFC](data/MSVC/x64/mcrit/2017_Pro_mfc_x64.mcrit)    | [x86](data/MSVC/x86/smda/2017_Pro_x86.7z) / [x86-MFC](data/MSVC/x86/smda/2017_Pro_mfc_x86.7z) / [x64](data/MSVC/x64/mcrit/2017_Pro_x64.mcrit) / [x64-MFC](data/MSVC/x64/mcrit/2017_Pro_mfc_x64.mcrit)   |
 
 
 ### MinGW<a id='mingw'></a>
